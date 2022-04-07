@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #d1d8e0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#app{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  
+}
+
+/* ---------MAIN---------- */  
+.main{
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+  max-height: 520px;
+}
+
+h1 , .total , button{
+  font-size: 22px;
+}
+
+/* ---------TITULO---------- */  
+
+
+h1{
+  text-align: center;
+  border-bottom: 1px solid #C2C2C2;
+  height:70px;
+  margin-bottom: 15px;
+  padding:20px;
+}
+
+/* ---------LISTA---------- */  
+
+
+li{
+  display:flex;
+  font-size: 18px;
+}
+
+img{
+  width:150px;
+  height:150px;
+  border: 1px solid #C2C2C2;
+  margin : 15px 30px;
+}
+
+.nomePreco{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  padding-right: 30px;
+}
+
+label{
+  margin-bottom: 10px;
+}
+
+.priceOriginal{
+  color: #C2C2C2;
+  font-size: 13px;
+}
+
+
+/* ---------TOTAL---------- */  
+
+.total{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left:30px;
+  padding-right: 30px;
+  border-bottom: 1px solid #C2C2C2;
+  border-top: 1px solid #C2C2C2;
+  height: 150px;
+  margin-top: 15px;
+}
+
+
+.values{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:20px;
+}
+
+.values + div {
+  color: #428412;
+  background-color: #c3fba3;
+  text-align: center;
+  border-radius: 16px;
+  height:40px;
+  width: 500px;
+  padding-top: 6px;
+  margin-left: 15px;
+  
+}
+
+/* ---------FOOTER---------- */  
+
+.footer{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  height: 100px;
+  padding: 20px;
+  
+}
+
+button{
+  background: #3970e2;
+  color: white;
+  border-radius: 8px;
+  height:60px;
+  width: 550px;
+  
+  
+}
+
+button:hover {
+  background-color: rgba(57, 112, 226, 0.9);
+  
+}
+
+
+/* ---------LOADING---------- */ 
+.loading{
+  display: none;
+  justify-content: center;
+}
+
+.loading::after{
+  content: "";
+  width: 50px;
+  height:50px;
+  border: 10px solid #dddddd;
+  border-top-color: #009579;
+  border-radius: 50%;
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  to{
+    transform: rotate(1turn);
+  }
+}
