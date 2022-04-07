@@ -1,8 +1,8 @@
 const Item = ({name, imageUrl, price, sellingPrice}) => {
   const itemLista = document.createElement("li");
-  const divPreco = document.createElement("div");
+  const divPrice = document.createElement("div");
 
-  divPreco.classList.add("nomePreco");
+  divPrice.classList.add("namePrice");
 
   const imageItem = document.createElement("img");
   imageItem.setAttribute("src", imageUrl);
@@ -19,8 +19,8 @@ const Item = ({name, imageUrl, price, sellingPrice}) => {
   sellingPriceItem.innerHTML=`R$${(sellingPrice/100).toLocaleString()}`;
   
 
-  divPreco.append(nameItem, priceItem,sellingPriceItem);
-  itemLista.append(imageItem, divPreco);
+  divPrice.append(nameItem, priceItem,sellingPriceItem);
+  itemLista.append(imageItem, divPrice);
 
   
   return itemLista;
