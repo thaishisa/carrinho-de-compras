@@ -1,38 +1,54 @@
+:root {
+  --color-gray: #C2C2C2;
+  --font-light: 300;
+  --font-semibold: 600;
+  --font-regular: 400;
+}
+
 * {
   box-sizing: border-box;
+
 }
 
 html,
 body {
   background-color: #d1d8e0;
+  width: 100%;
+  height:100%
 }
 
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: var(--font-regular);
 }
 
 
 #app{
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  background: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   
+  
+  display: flex;
+  flex-direction: column; 
+ 
   
 }
 
+#acima{
+  margin-bottom: 20px;
+}
+
 /* ---------MAIN---------- */  
-.main{
+main{
   display: flex;
   flex-direction: column;
   background: #ffffff;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
   font-size: 22px;
-  max-height: 520px;
+  border-radius: 12px;
+  margin-top: 50px ;
+  margin-bottom: 50px;
+  
 }
 
 h1 , .total , button{
@@ -44,10 +60,11 @@ h1 , .total , button{
 
 h1{
   text-align: center;
-  border-bottom: 1px solid #C2C2C2;
+  border-bottom: 1px solid var(--color-gray);
   height:70px;
   margin-bottom: 15px;
   padding:20px;
+  font-weight: var(--font-semibold);
 }
 
 /* ---------LISTA---------- */  
@@ -61,8 +78,14 @@ li{
 img{
   width:150px;
   height:150px;
-  border: 1px solid #C2C2C2;
+  border: 1px solid var(--color-gray);
   margin : 15px 30px;
+  object-fit: contain;
+}
+
+.nameProduct{
+  text-transform: capitalize;
+  font-weight: var(--font-semibold);
 }
 
 .nomePreco{
@@ -72,12 +95,12 @@ img{
   padding-right: 30px;
 }
 
-label{
+h3{
   margin-bottom: 10px;
 }
 
 .priceOriginal{
-  color: #C2C2C2;
+  color: var(--color-gray);
   font-size: 13px;
 }
 
@@ -90,10 +113,11 @@ label{
   justify-content: center;
   padding-left:30px;
   padding-right: 30px;
-  border-bottom: 1px solid #C2C2C2;
-  border-top: 1px solid #C2C2C2;
+  border-bottom: 1px solid var(--color-gray);
+  border-top: 1px solid var(--color-gray);
   height: 150px;
   margin-top: 15px;
+  font-weight: var(--font-semibold);
 }
 
 
@@ -103,15 +127,18 @@ label{
   margin-bottom:20px;
 }
 
-.values + div {
+.freight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #428412;
   background-color: #c3fba3;
   text-align: center;
-  border-radius: 16px;
-  height:40px;
+  border-radius: 100px;
+  height:60px;
   width: 500px;
-  padding-top: 6px;
   margin-left: 15px;
+  font-weight: normal;
   
 }
 
@@ -133,7 +160,7 @@ button{
   border-radius: 8px;
   height:60px;
   width: 550px;
-  
+  font-weight: bold;
   
 }
 
@@ -144,6 +171,7 @@ button:hover {
 
 
 /* ---------LOADING---------- */ 
+/*comentar spinner*/
 .loading{
   display: none;
   justify-content: center;

@@ -27,7 +27,7 @@ const Cart = ({items, value}) => {
     const main = document.createElement("main");
 
     const title = document.createElement("h1");
-    title.innerHTML = "Meu Carrinho";
+    title.innerHTML = "Meu carrinho";
 
     const divList = document.createElement("div");
     divList.classList.add("lista");
@@ -53,6 +53,7 @@ const Cart = ({items, value}) => {
     if ((value/100>10)){
         const divFreight = document.createElement("div");
         divFreight.innerHTML = "Parabéns, sua compra tem frete grátis!";
+        divFreight.classList.add("freight");
         divTotal.append(divFreight);
 
     }

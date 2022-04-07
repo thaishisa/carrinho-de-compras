@@ -7,14 +7,15 @@ const Item = ({name, imageUrl, price, sellingPrice}) => {
   const imageItem = document.createElement("img");
   imageItem.setAttribute("src", imageUrl);
 
-  const nameItem = document.createElement("label");
+  const nameItem = document.createElement("h3");
   nameItem.innerHTML=name;
+  nameItem.classList.add("nameProduct");
 
-  const priceItem = document.createElement("label");
+  const priceItem = document.createElement("h3");
   priceItem.innerHTML= `R$${(price/100).toLocaleString()}`;
   priceItem.classList.add("priceOriginal");
 
-  const sellingPriceItem = document.createElement("label");
+  const sellingPriceItem = document.createElement("h3");
   sellingPriceItem.innerHTML=`R$${(sellingPrice/100).toLocaleString()}`;
   
 
