@@ -15,7 +15,7 @@ rode `npm run dev` ou `yarn dev`
 
 ## Observação
 
-Esse projeto foi criado utilizando Vite e, portanto, requer uma versão >= 12.2.0 do Node.js
+Esse projeto foi criado utilizando Vite e, portanto, requer uma versão maior ou igual à 12.2.0 do Node.js
 
 <hr>
 
