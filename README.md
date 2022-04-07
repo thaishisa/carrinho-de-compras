@@ -13,5 +13,9 @@ Clonar esse repositório e entrar na pasta teste-thais, rode então `npm install
 
 rode `npm run dev` ou `yarn dev`
 
+## Observação
+
+Esse projeto foi criado utilizando Vite e, portanto, requer uma versão >= 12.2.0 do Node.js
+
 <hr>
 
